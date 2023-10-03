@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Add or push Data</title>
+</head>
+<body>
+	<h3>Add a new member:<input type="text" name="Member" id="Addinput"></h3>
+<button type="button" onclick="add()">Add Member</button>
+<p id="updatedMembers"></p>
+<script >
+const members = ['Rain','Enan','Arniel','Jojo','Grace','Nene', 'Maricar', 'Ace', 'Joseph'];
+
+	
+	function add(newMember){
+	for(let i = 0; i<=members.length; i++){
+		let data = document.getElementById("Addinput").innerHTML = members[i];
+		newMember.push(data);
+	}
+	document.getElementById("updatedMembers").innerHTML = newMember(members);
+}
+</script>
+</body>
+</html>
